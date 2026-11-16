@@ -1,0 +1,397 @@
+{
+  "SYNO.API.Auth": {
+    "maxVersion": 7,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.API.Auth.Key": {
+    "maxVersion": 7,
+    "minVersion": 7,
+    "path": "entry.cgi"
+  },
+  "SYNO.API.Auth.Key.Code": {
+    "maxVersion": 7,
+    "minVersion": 7,
+    "path": "entry.cgi"
+  },
+  "SYNO.API.Auth.RedirectURI": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.API.Auth.Type": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.API.Auth.UIConfig": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.BackgroundTask.File": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.BackgroundTask.Info": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Album": {
+    "maxVersion": 5,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Category": {
+    "maxVersion": 4,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Concept": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.ConditionAlbum": {
+    "maxVersion": 4,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Diff": {
+    "maxVersion": 7,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Folder": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.GeneralTag": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Geocoding": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Item": {
+    "maxVersion": 7,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.NormalAlbum": {
+    "maxVersion": 4,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Person": {
+    "maxVersion": 3,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.RecentlyAdded": {
+    "maxVersion": 6,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Similar": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.SimilarItem": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.SimilarTimeline": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Timeline": {
+    "maxVersion": 6,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Browse.Unit": {
+    "maxVersion": 3,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Development.Admin": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Download": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Favorite": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Index": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Migration": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Notification": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.PhotoRequest": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.PublicSharing": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.RegeneratePreview": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Search.Filter": {
+    "maxVersion": 4,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Search.Search": {
+    "maxVersion": 7,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Setting.Admin": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Setting.Guest": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Setting.MobileCompatibility": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Setting.TeamSpace": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Setting.User": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Setting.Wizard": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Sharing.Misc": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Sharing.Passphrase": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Streaming": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Thumbnail": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Udc": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Upload.ConvertedFile": {
+    "maxVersion": 5,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Upload.Face": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Upload.Item": {
+    "maxVersion": 8,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.Upload.PhotoRequestItem": {
+    "maxVersion": 3,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.Foto.UserInfo": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.BackgroundTask.File": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.Concept": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.Diff": {
+    "maxVersion": 7,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.Folder": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.GeneralTag": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.Geocoding": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.Item": {
+    "maxVersion": 7,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.Person": {
+    "maxVersion": 3,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.RecentlyAdded": {
+    "maxVersion": 6,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.Similar": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.SimilarItem": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.SimilarTimeline": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.Timeline": {
+    "maxVersion": 6,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Browse.Unit": {
+    "maxVersion": 3,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Download": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Index": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.RegeneratePreview": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Search.Filter": {
+    "maxVersion": 4,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Search.Search": {
+    "maxVersion": 7,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Sharing.FolderBatchPermission": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Sharing.FolderPermission": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Sharing.Passphrase": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Streaming": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Thumbnail": {
+    "maxVersion": 2,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Upload.ConvertedFile": {
+    "maxVersion": 5,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Upload.Face": {
+    "maxVersion": 1,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  },
+  "SYNO.FotoTeam.Upload.Item": {
+    "maxVersion": 8,
+    "minVersion": 1,
+    "path": "entry.cgi"
+  }
+}

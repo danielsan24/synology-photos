@@ -1,0 +1,20 @@
+[
+ {
+  "t": "2026-11-16T13:08:14.913Z",
+  "note": "Photos web app, owner's own album, Share dialog: the user picker lists DSM users and groups. User names and ids of this NAS are replaced by placeholders: they stay out of the skill.",
+  "api": "SYNO.Foto.Sharing.Misc", "method": "list_user_group", "version": "1",
+  "params": {"team_space_sharable_list": "false"},
+  "response": "{\"data\":{\"list\":[{\"id\":<uid>,\"name\":\"<user name>\",\"type\":\"user\"}, ...]},\"success\":true}"
+ },
+ {
+  "t": "2026-11-16T13:09:02Z",
+  "note": "Share the album with one DSM user as Downloader (owner action). The dialog offers only Viewer (view) and Downloader (download) for a user: no manager or admin role exists for a shared album in this Photos version.",
+  "api": "SYNO.Foto.Sharing.Passphrase", "method": "update", "version": "1",
+  "params": {
+   "passphrase": "\"<album passphrase>\"",
+   "expiration": "0",
+   "permission": "[{\"role\":\"download\",\"action\":\"update\",\"member\":{\"type\":\"user\",\"id\":<uid>}}]"
+  },
+  "response": "{\"success\":true}"
+ }
+]

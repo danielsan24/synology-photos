@@ -1,0 +1,12 @@
+repos:
+  - repo: local
+    hooks:
+      - id: gitleaks
+        name: gitleaks protect --staged
+        entry: gitleaks protect --staged --redact --verbose
+        language: system
+        pass_filenames: false
+      - id: max-file-size
+        name: refuse files over 2 MB
+        entry: python3 -c "import os,sys; big=[f for f in sys.argv[1:] if os.path.getsize(f)>2*1024*1024]; print(*big, sep='\n'); sys.exit(1 if big else 0)"
+        language: system

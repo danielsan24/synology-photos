@@ -1,0 +1,15 @@
+# Captured 2026-10-31 from the Photos web app (Chrome) as user reader, secrets removed.
+SYNO.Foto.Sharing.Passphrase.set_shared v1 {"album_id":"29","policy":"\"album\"","enabled":"true"}
+SYNO.Foto.Sharing.Passphrase.update v1 {"passphrase":"\"<album passphrase>\"","password":"***","expiration":"0","permission":"[{\"action\":\"update\",\"role\":\"download\",\"member\":{\"type\":\"public\"}}]"}
+# read back (in-page, read-only): SYNO.Foto.Browse.Album.get v4 {"id":"[29]","additional":"[\"sharing_info\"]"} ->
+#   additional.sharing_info = {enable_password: true, expiration: 0, privacy_type: "public-download",
+#   sharing_link: "https://mynas.synology.me:5001/mo/sharing/<passphrase>", owner: {name: "reader"}}; album.passphrase
+SYNO.FotoTeam.Browse.Item.set v7 {"id":"[7003]","rating":"3"}
+SYNO.FotoTeam.Browse.GeneralTag.suggest v2 {"keyword":"\"skill\"","limit":"5"}
+SYNO.FotoTeam.Browse.GeneralTag.create v2 {"name":"\"skilltest\""}        # new tag id 3
+SYNO.FotoTeam.Browse.Item.add_tag v7 {"id":"[7004]","tag":"[3]"}
+SYNO.FotoTeam.Browse.Item.list_face v7 {"id_item":"7004"} ->
+#   {"list":[{"face_id":9001,"person_id":5101,"name":"Bella Example","face_bounding_box":{"top_left":{"x":0.41,"y":0.22},"bottom_right":{"x":0.55,"y":0.32}}}, ...]}
+SYNO.FotoTeam.Browse.Person.delete_face v1 {"person_id":"5101","face_id":"[9002]"}   # unlink person from face; photo stays
+SYNO.FotoTeam.Browse.Person.add_face v3 {"id_item":"7004","face":"[{\"face_bounding_box\":{\"top_left\":{\"x\":0.4097,\"y\":0.2194},\"bottom_right\":{\"x\":0.5454,\"y\":0.3216}},\"face_id_temp\":\"7004-0\",\"person_id\":5101}]"}
+# Test photo: IMG_0001.jpg (item 7004), person Bella Example (5101). Tag "skilltest" is still on it (removal not captured).

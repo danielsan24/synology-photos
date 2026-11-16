@@ -1,0 +1,14 @@
+[
+ {
+  "t": "2026-11-16T11:47:30.653Z",
+  "note": "Photos web app, Shared Space root, 'Create folder' named TestFolderForClaude (owner action)",
+  "cgi": "entry.cgi/SYNO.FotoTeam.Browse.Folder",
+  "api": "SYNO.FotoTeam.Browse.Folder",
+  "method": "create",
+  "version": "1",
+  "multipart": false,
+  "params": {"target_id": "1", "name": "\"TestFolderForClaude\""},
+  "status": 200,
+  "response": "{\"data\":{\"folder\":{\"id\":601,\"name\":\"/TestFolderForClaude\",\"owner_user_id\":0,\"parent\":1,\"passphrase\":\"\",\"shared\":false,\"sort_by\":\"default\",\"sort_direction\":\"default\"}},\"success\":true}"
+ }
+]

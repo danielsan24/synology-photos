@@ -1,0 +1,22 @@
+# no photos, no secrets, no local caches
+*.jpg
+*.jpeg
+*.JPG
+*.heic
+*.HEIC
+*.png
+*.tif
+*.tiff
+*.nef
+*.NEF
+*.mov
+*.MOV
+*.mp4
+*.pem
+.env*
+config.local.yaml
+__pycache__/
+.pytest_cache/
+*-workspace/
+.DS_Store
+runs/

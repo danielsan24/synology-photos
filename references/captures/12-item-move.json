@@ -1,0 +1,29 @@
+[
+ {
+  "t": "2026-11-16T11:58:10.465Z",
+  "note": "Photos web app, inside folder 601, 'Move to' folder 602 (TestFolderForClaude2) on item 7001 (owner action). A background task; the app then polls BackgroundTask.Info get_status. The same call takes folder ids (folder_id) to move whole folders.",
+  "cgi": "entry.cgi/SYNO.FotoTeam.BackgroundTask.File",
+  "api": "SYNO.FotoTeam.BackgroundTask.File",
+  "method": "move",
+  "version": "1",
+  "params": {
+   "target_folder_id": "602",
+   "item_id": "[7001]",
+   "folder_id": "[]",
+   "action": "\"skip\"",
+   "extra_info": "\"{\\\"version\\\":2,\\\"source_library\\\":\\\"shared_space\\\",\\\"source_folder_ids\\\":[601]}\""
+  },
+  "status": 200,
+  "response": "{\"data\":{\"task_info\":{\"completion\":0,\"create_time\":1794830290440,\"error\":0,\"extra_info\":\"{\\\"version\\\":2,\\\"source_library\\\":\\\"shared_space\\\",\\\"source_folder_ids\\\":[601]}\",\"id\":24,\"operation\":\"move\",\"overwrite\":0,\"skip\":0,\"status\":\"waiting\",\"target_folder\":{\"id\":602,\"owner_user_id\":0},\"total\":1}},\"success\":true}"
+ },
+ {
+  "t": "2026-11-16T11:58:11.511Z",
+  "cgi": "entry.cgi/SYNO.Foto.BackgroundTask.Info",
+  "api": "SYNO.Foto.BackgroundTask.Info",
+  "method": "get_status",
+  "version": "1",
+  "params": {"id": "[24]"},
+  "status": 200,
+  "response": "{\"data\":{\"list\":[{\"completion\":1,\"create_time\":1794830290440,\"error\":0,\"extra_info\":\"{\\\"version\\\":2,\\\"source_library\\\":\\\"shared_space\\\",\\\"source_folder_ids\\\":[601]}\",\"id\":24,\"operation\":\"move\",\"overwrite\":0,\"skip\":0,\"status\":\"done\",\"target_folder\":{\"id\":602,\"owner_user_id\":0},\"total\":1}]},\"success\":true}"
+ }
+]

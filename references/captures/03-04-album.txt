@@ -1,0 +1,13 @@
+# Captured 2026-10-31 from the Photos web app (Chrome), secrets removed. Album id 28 (test album).
+SYNO.Foto.Browse.NormalAlbum.create v1 {"name":"\"\"","item":"[89990,88919]"}       # UI creates with items, unnamed
+SYNO.Foto.Browse.Album.get v4 {"id":"[28]"}
+SYNO.Foto.Browse.Album.set_name v1 {"id":"28","name":"\"skill-test\""}             # rename is on Browse.Album
+SYNO.Foto.Browse.NormalAlbum.delete_item v1 {"item":"[89990]","id":"28"}            # removes from album only; photo stays
+SYNO.Foto.Browse.Album.set_name v1 {"id":"28","name":"\"skill-test-2\""}
+SYNO.Foto.Browse.Album.list v4 {"offset":"0","limit":"100","category":"\"normal_share_with_me\"","sort_by":"\"create_time\"","sort_direction":"\"desc\""}
+SYNO.Foto.Browse.GeneralTag.list v2 {"offset":"0","limit":"4"}
+SYNO.Foto.Sharing.Passphrase.set_shared v1 {"album_id":"28","policy":"\"album\"","enabled":"true"}   # response not recorded (fixed recorder)
+SYNO.Foto.Sharing.Passphrase.update v1 {"passphrase":"\"<album passphrase>\"","password":"***","expiration":"0","permission":"[{\"action\":\"update\",\"role\":\"view\",\"member\":{\"type\":\"public\"}}]"}
+SYNO.Foto.Sharing.Passphrase.set_shared v1 {"policy":"\"album\"","album_id":"28","enabled":"false"}  # stop sharing
+SYNO.Foto.Sharing.Misc.list_user_group v1 {"team_space_sharable_list":"false"}
+"SYNO.Foto.Download"."download" v2 {"cache_key":"\"89990_...\"","unit_id":"[89990]","album_id":"28"}

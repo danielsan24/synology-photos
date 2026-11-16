@@ -1,0 +1,23 @@
+[
+ {
+  "t": "2026-11-16T11:49:32.423Z",
+  "note": "Photos web app, inside folder 601 (TestFolderForClaude), Upload one JPEG without EXIF (owner action). The browser generates thumb_xl/m/sm itself. Result: item 7001, dated 2026-11-16 (the file mtime / upload day: the JPEG had no EXIF date).",
+  "cgi": "entry.cgi/SYNO.FotoTeam.Upload.Item",
+  "api": "SYNO.FotoTeam.Upload.Item",
+  "method": "upload_to_folder",
+  "version": "8",
+  "multipart": true,
+  "params": {
+   "file": "[file name=01_01_2025-11-22_t1234.jpg type=image/jpeg size=3339505]",
+   "duplicate": "\"ignore\"",
+   "name": "\"01_01_2025-11-22_t1234.jpg\"",
+   "mtime": "1794823598",
+   "target_folder_id": "601",
+   "thumb_xl": "[file name=blob type=image/jpeg size=555495]",
+   "thumb_sm": "[file name=blob type=image/jpeg size=35178]",
+   "thumb_m": "[file name=blob type=image/jpeg size=57565]"
+  },
+  "status": 200,
+  "response": "{\"data\":{\"action\":\"new\",\"id\":7001,\"unit_id\":7001},\"success\":true}"
+ }
+]

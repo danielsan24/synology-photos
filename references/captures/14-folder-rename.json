@@ -1,0 +1,13 @@
+[
+ {
+  "t": "2026-11-16T12:12:19.957Z",
+  "note": "Photos web app, Shared Space root, rename folder 602 TestFolderForClaude2 -> TestFolderForClaude2b (owner action). Synchronous; no background task.",
+  "cgi": "entry.cgi/SYNO.FotoTeam.Browse.Folder",
+  "api": "SYNO.FotoTeam.Browse.Folder",
+  "method": "rename",
+  "version": "1",
+  "params": {"id": "602", "name": "\"TestFolderForClaude2b\""},
+  "status": 200,
+  "response": "{\"data\":{\"folder\":{\"id\":602,\"name\":\"/TestFolderForClaude2b\",\"owner_user_id\":0,\"parent\":1,\"passphrase\":\"\",\"shared\":false,\"sort_by\":\"default\",\"sort_direction\":\"default\"}},\"success\":true}"
+ }
+]

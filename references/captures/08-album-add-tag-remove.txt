@@ -1,0 +1,3 @@
+# Captured 2026-10-31 from the Photos web app (Chrome), secrets removed.
+SYNO.Foto.Browse.NormalAlbum.add_item v1 {"id":"29","item":"[89999]"}
+SYNO.FotoTeam.Browse.Item.remove_tag v7 {"id":"[7004]","tag":"[3]"}

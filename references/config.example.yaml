@@ -1,0 +1,13 @@
+# synology-photos config. No secrets here: the password lives in the system keyring (references/setup.md).
+public_host: mynas.synology.me   # DDNS / public name; must match the DSM certificate
+lan_host: ""                     # optional LAN address, tried first; the certificate is still checked against public_host
+nas_port: 5001
+ca_bundle: system                # or the path to an exported DSM certificate (.pem)
+account: photos-agent            # DSM account with Synology Photos (write rights for edits)
+keychain_service: synology-photos   # Keychain item: security add-generic-password -s synology-photos -a photos-agent -w
+default_space: team              # team = Shared Space, personal = the account's own space
+sync_exclude_folders: []         # folder ids `sync` leaves out with their subfolders (exports uploaded for sharing)
+album_members: []                # [{user: <DSM user>, role: view|download}]: every new album is shared with them (e.g. your own login)
+share_expiry_days: 30            # every share expires this many days after it is made
+share_max_days: 90               # the longest expiry album-share accepts
+album_max_age_days: 30           # album-cleanup: albums this tool created are due after this many days

@@ -1,0 +1,11 @@
+# Captured 2026-10-31 from the Photos web app (Chrome), secrets removed. Shared Space.
+SYNO.FotoTeam.Browse.Item.count_with_filter v7 {"folder":"[1]","time":"[{\"start_time\":1777593600,\"end_time\":1780271999}]"}
+SYNO.FotoTeam.Browse.Item.list_with_filter v7 {"folder":"[1]","sort_by":"\"takentime\"","sort_direction":"\"asc\"","time":"[{...}]"}
+SYNO.FotoTeam.Browse.Item.count_with_filter v7 {"folder":"[1]","time":"[{\"start_time\":1722470400,\"end_time\":1725148799},{\"start_time\":1719792000,\"end_time\":1722470399},{\"start_time\":1717200000,\"end_time\":1719791999}]","person":"[5100]","person_policy":"\"or\""}
+SYNO.FotoTeam.Browse.Item.list_with_filter v7 {"folder":"[1]","sort_by":"\"takentime\"","sort_direction":"\"asc\"","time":"[...]","person":"[5100]","person_policy":"\"or\""}
+SYNO.FotoTeam.Browse.Item.count_with_filter v7 {"folder":"[1]","person":"[5100]","person_policy":"\"or\""}
+SYNO.FotoTeam.Search.Search.suggest v7 {"keyword":"\"be\""}
+SYNO.FotoTeam.Search.Search.get_search_timeline v7 {"timeline_group_unit":"\"day\"","keyword":"\"beach\""}
+SYNO.FotoTeam.Search.Search.list_item v7 {"keyword":"\"beach\"","start_time":"1762646400","end_time":"1789948799"}
+# Notes: the web app JSON-encodes string params ("\"asc\""); raw strings also work (earlier probe).
+# Several time ranges are OR-ed (the UI sends one per month). folder=[root] scopes the filter to the whole space.

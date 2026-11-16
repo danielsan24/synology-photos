@@ -1,0 +1,8 @@
+# Captured 2026-10-31 from the Photos web app (Chrome), secrets removed. Shared Space.
+SYNO.FotoTeam.Browse.Person.set v1 {"id":"5102","name":"\"skilltest person\""}
+  -> {"data":{"cover":7101,"id":5102,"item_count":3,"name":"skilltest person","show":true},"success":true}
+SYNO.FotoTeam.Browse.Person.merge v2 {"target_id":"5100","merged_id":"[5103]","name":"\"Alice Example\""}
+  -> {"data":{"cover":7102,"id":5100,"item_count":1200,"name":"Alice Example","show":true},"success":true}
+# Live test 2026-10-31 (runs/live-1): list_with_filter with folder=[1] only returns items stored directly in the
+# root folder (1 photo of Alice in July 2024, tag filter 0). The UI sent folder=[1] because it was in the folder
+# view. Whole-space filters omit folder (earlier probe: rating filter without folder works).

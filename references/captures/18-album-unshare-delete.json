@@ -1,0 +1,16 @@
+[
+ {
+  "t": "2026-11-16T13:22:58Z",
+  "note": "Photos web app, owner's rule album 32: stop sharing (owner action). Same call as album-unshare.",
+  "api": "SYNO.Foto.Sharing.Passphrase", "method": "set_shared", "version": "1",
+  "params": {"policy": "\"album\"", "album_id": "32", "enabled": "false"},
+  "response": "{\"data\":{\"passphrase\":\"<album passphrase>\",\"sharing_link\":\"<link>\"},\"success\":true}"
+ },
+ {
+  "t": "2026-11-16T13:23:03Z",
+  "note": "Delete the album 32 (a rule album: it holds no photos of its own) (owner action). Removes the album only; Synology Photos keeps the photos of a deleted album in the library. synophotos sends it for one album the skill's account owns, after unsharing it.",
+  "api": "SYNO.Foto.Browse.Album", "method": "delete", "version": "1",
+  "params": {"id": "[32]"},
+  "response": "{\"success\":true}"
+ }
+]

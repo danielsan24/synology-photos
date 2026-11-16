@@ -1,0 +1,22 @@
+folders under root: 597
+count(root folder): 0; sum of per-folder counts: <total>
+folder 262: count=53 listed=53
+items listed folder by folder (no double counting): <total>
+additional+exif: ok, keys=['exif', 'orientation', 'orientation_original', 'resolution', 'thumbnail']
+additional+gps: ok, keys=['orientation', 'orientation_original', 'resolution', 'thumbnail']
+additional+person: ok, keys=['orientation', 'orientation_original', 'person', 'resolution', 'thumbnail']
+additional+rating: ok, keys=['orientation', 'orientation_original', 'rating', 'resolution', 'thumbnail']
+additional+tag: ok, keys=['orientation', 'orientation_original', 'resolution', 'tag', 'thumbnail']
+additional+favorite: ok, keys=['orientation', 'orientation_original', 'resolution', 'thumbnail']
+item keys: ['additional', 'filename', 'filesize', 'folder_id', 'id', 'indexed_time', 'owner_user_id', 'time', 'type']
+additional of first item: {'tag': 'list', 'person': [{'id': 5104, 'name': '', 'item_count': 11, 'show': True, 'additional': {'thumbnail': {'cache_key': '<key>'}}}, {'id': 5105, 'name': '', 'item_count': 1, 'show': True, 'additional': {'thumbnail': {'cache_key': '<key>'}}}], 'exif': 'dict', 'resolution': {'width': 1537, 'height': 2048}, 'orientation': 1, 'orientation_original': 'int', 'thumbnail': 'dict', 'rating': 0}
+rating values in folder sample: Counter({0: 50, 4: 3})
+types in sample: {'photo': 5}
+rating in sample: [0, 0, 0, 0, 0]
+list_with_filter rating=[4,5] no folder: ok, first page 500
+list_with_filter rating=[4,5] root folder: ok, first page 500
+list_with_filter rating=[5] no folder: ok, first page 2
+list_with_filter rating=[4] no folder: ok, first page 500
+count_with_filter rating=[4,5]: 856
+SYNO.FotoTeam.Browse.Person.list v1: 500 people; <name>=<item count>, ... (names removed)
+items by person_id: ok, 5

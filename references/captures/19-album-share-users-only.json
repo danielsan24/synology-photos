@@ -1,0 +1,15 @@
+[
+ {
+  "t": "2026-11-16T13:29:05Z",
+  "note": "Photos web app, owner's album 34 (test001, 1 photo): share with one DSM user as Viewer, public link off, no expiry (owner action). Sharing is still ENABLED (set_shared enabled=true); the permission list simply holds no public member. The dialog had called set_shared enabled=false twice while open, to read the passphrase. The guessed shape with enabled=false before update got DSM 120 (live 2026-11-16).",
+  "calls": [
+   {"api": "SYNO.Foto.Sharing.Passphrase", "method": "set_shared", "version": "1",
+    "params": {"album_id": "34", "policy": "\"album\"", "enabled": "true"},
+    "response": "{\"data\":{\"passphrase\":\"<album passphrase>\",\"sharing_link\":\"<link>\"},\"success\":true}"},
+   {"api": "SYNO.Foto.Sharing.Passphrase", "method": "update", "version": "1",
+    "params": {"passphrase": "\"<album passphrase>\"", "expiration": "0",
+               "permission": "[{\"role\":\"view\",\"action\":\"update\",\"member\":{\"type\":\"user\",\"id\":<uid>}}]"},
+    "response": "{\"success\":true}"}
+  ]
+ }
+]

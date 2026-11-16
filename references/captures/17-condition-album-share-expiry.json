@@ -1,0 +1,31 @@
+[
+ {
+  "t": "2026-11-16T13:15:34Z",
+  "note": "Photos web app, owner's account: create album from rules. While the rules are edited the app counts the matches with peek_item_count (same condition as create).",
+  "api": "SYNO.Foto.Browse.ConditionAlbum", "method": "peek_item_count", "version": "4",
+  "params": {"condition": "{\"user_id\":0,\"item_type\":[],\"folder_filter\":[605],\"time\":[{\"start_time\":1761955200,\"end_time\":1793577599}],\"favorite\":[true],\"person\":[5100],\"person_policy\":\"or\"}"},
+  "response": "{\"data\":{\"count\":0},\"success\":true}"
+ },
+ {
+  "t": "2026-11-16T13:15:55Z",
+  "note": "Rule value picker: keyword search over the condition kinds (person, general_tag, camera, lens, geocoding, concept, iso, aperture, exposure, focal length). user_id 0 = Shared Space.",
+  "api": "SYNO.Foto.Browse.ConditionAlbum", "method": "suggest", "version": "4",
+  "params": {"keyword": "\"alice\"", "user_id": "0", "condition": "[\"aperture\",\"camera\",\"exposure_time_group\",\"focal_length_group\",\"general_tag\",\"geocoding\",\"iso\",\"lens\",\"person\",\"concept\"]", "additional": "[\"thumbnail\"]"},
+  "response": "{\"data\":{\"aperture\":[],\"camera\":[],\"concept\":[],...,\"general_tag\":[{\"id\":1,\"name\":\"...\"}],...},\"success\":true}"
+ },
+ {
+  "t": "2026-11-16T13:16:24Z",
+  "note": "Create the rule album: name, condition. Rules seen: user_id 0 (Shared Space), item_type [] (all), folder_filter [folder ids], time [{start_time, end_time}] (epoch s, local day bounds), favorite [true], person [ids], person_policy or|and.",
+  "api": "SYNO.Foto.Browse.ConditionAlbum", "method": "create", "version": "4",
+  "params": {"name": "\"2026-11-16\"", "condition": "{\"user_id\":0,\"item_type\":[],\"folder_filter\":[605],\"time\":[{\"start_time\":1761955200,\"end_time\":1793577599}],\"favorite\":[true],\"person\":[5100],\"person_policy\":\"or\"}"},
+  "response": "{\"data\":{\"album\":{\"condition\":{...},\"create_time\":1794834984,\"id\":32,\"item_count\":0,\"name\":\"2026-11-16\",\"owner_user_id\":<owner>,\"type\":\"condition\"}},\"success\":true}"
+ },
+ {
+  "t": "2026-11-16T13:17:08Z",
+  "note": "Share dialog saved: public link with password and download, plus one DSM user as Viewer, expiring in one month. One expiration for the whole share (epoch s, end of the chosen local day). Public and user members in one permission list. (The dialog first called set_shared enabled=false when opened, to get the passphrase.)",
+  "api": "SYNO.Foto.Sharing.Passphrase", "method": "update", "version": "1",
+  "params": {"passphrase": "\"<album passphrase>\"", "password": "***", "expiration": "1797461999",
+             "permission": "[{\"action\":\"update\",\"role\":\"download\",\"member\":{\"type\":\"public\"}},{\"role\":\"view\",\"action\":\"update\",\"member\":{\"type\":\"user\",\"id\":<uid>}}]"},
+  "response": "{\"success\":true}"
+ }
+]

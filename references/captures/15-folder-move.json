@@ -1,0 +1,19 @@
+[
+ {
+  "t": "2026-11-16T12:13:30.588Z",
+  "note": "Photos web app, Shared Space root: 'Move to' on the whole folder 602 (TestFolderForClaude2b, empty) into 604 (TestParentForClaude, created just before) (owner action). Same call as an item move (capture 12) with folder_id filled and item_id empty; source_folder_ids is the moved folder's parent. Background task, polled with get_status until done.",
+  "cgi": "entry.cgi/SYNO.FotoTeam.BackgroundTask.File",
+  "api": "SYNO.FotoTeam.BackgroundTask.File",
+  "method": "move",
+  "version": "1",
+  "params": {
+   "target_folder_id": "604",
+   "item_id": "[]",
+   "folder_id": "[602]",
+   "action": "\"skip\"",
+   "extra_info": "\"{\\\"version\\\":2,\\\"source_library\\\":\\\"shared_space\\\",\\\"source_folder_ids\\\":[1]}\""
+  },
+  "status": 200,
+  "response": "task_info {id, status: waiting}; get_status then reported completion 1, status done"
+ }
+]
